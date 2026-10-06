@@ -105,16 +105,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenContactModal }) => {
             </p>
           </motion.div>
 
-          {/* Primary, Secondary & Showreel Action CTAs */}
+          {/* Primary & Secondary Action CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3.5 max-w-2xl mx-auto"
+            className="pt-2 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-5 max-w-md mx-auto"
           >
             <button
               onClick={() => onOpenContactModal()}
-              className="w-full sm:w-auto inline-flex items-center justify-center font-extrabold text-selestia-black bg-selestia-gold hover:bg-selestia-black hover:text-white rounded-full px-8 py-4 text-xs uppercase tracking-wider transition-all duration-300 shadow-xl shadow-selestia-gold/30 group interactive"
+              className="w-full sm:w-auto inline-flex items-center justify-center font-extrabold text-selestia-black bg-selestia-gold hover:bg-selestia-black hover:text-white rounded-full px-10 py-4.5 text-xs uppercase tracking-wider transition-all duration-300 shadow-xl shadow-selestia-gold/30 group interactive"
             >
               <span>Start a Project</span>
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1.5 transition-transform" />
@@ -126,18 +126,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenContactModal }) => {
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
                 else onOpenContactModal('Project Strategy & Estimator');
               }}
-              className="w-full sm:w-auto inline-flex items-center justify-center font-bold text-selestia-black bg-white hover:bg-selestia-gray-light border border-selestia-gray-border hover:border-selestia-gold rounded-full px-7 py-4 text-xs uppercase tracking-wider transition-all duration-300 shadow-sm group"
+              className="w-full sm:w-auto inline-flex items-center justify-center font-bold text-selestia-black bg-white hover:bg-selestia-gray-light border border-selestia-gray-border hover:border-selestia-gold rounded-full px-8 py-4.5 text-xs uppercase tracking-wider transition-all duration-300 shadow-sm group"
             >
               <Calculator className="w-4 h-4 text-selestia-gold mr-2 group-hover:scale-110 transition-transform" />
               <span>Calculate Project Scope</span>
-            </button>
-
-            <button
-              onClick={() => setShowreelOpen(true)}
-              className="w-full sm:w-auto inline-flex items-center justify-center font-bold text-white bg-selestia-black hover:bg-gray-900 border border-selestia-gold/40 hover:border-selestia-gold rounded-full px-7 py-4 text-xs uppercase tracking-wider transition-all duration-300 shadow-md group gold-glow-hover"
-            >
-              <Play className="w-3.5 h-3.5 text-selestia-gold fill-selestia-gold mr-2 group-hover:scale-125 transition-transform" />
-              <span>Watch 4K Reel</span>
             </button>
           </motion.div>
 
@@ -163,58 +155,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenContactModal }) => {
             <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full border border-selestia-gray-border shadow-sm">
               <CheckCircle2 className="w-4 h-4 text-selestia-gold flex-shrink-0" />
               <span>98.4% Retention</span>
-            </div>
-          </motion.div>
-
-          {/* Creative Studio 4K Showreel Media Preview Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.28 }}
-            className="pt-4 max-w-4xl mx-auto"
-          >
-            <div
-              onClick={() => setShowreelOpen(true)}
-              className="relative rounded-3xl overflow-hidden cursor-pointer group border-2 border-selestia-gold/40 shadow-2xl gold-glow hover:border-selestia-gold transition-all duration-500 aspect-[21/9] sm:aspect-[24/9] bg-selestia-black"
-            >
-              {/* Background Creative Image */}
-              <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
-                alt="Selestia Studio Showreel"
-                className="w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-75 transition-all duration-700"
-              />
-              
-              {/* Gradient Dark Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-selestia-black via-selestia-black/40 to-transparent" />
-
-              {/* Glassmorphic Top Left Pill */}
-              <div className="absolute top-4 left-4 flex items-center space-x-2 bg-selestia-black/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-selestia-gold/40 text-[10px] font-mono font-bold text-white uppercase tracking-widest">
-                <span className="w-2 h-2 rounded-full bg-selestia-gold animate-ping" />
-                <span>2026 CREATIVE SHOWREEL</span>
-              </div>
-
-              {/* Top Right Duration Pill */}
-              <div className="absolute top-4 right-4 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 text-[10px] font-mono font-bold text-white uppercase tracking-wider">
-                0:45 4K FILM
-              </div>
-
-              {/* Central Glowing Play Trigger */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-3 pointer-events-none">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-selestia-gold text-selestia-black flex items-center justify-center shadow-2xl shadow-selestia-gold group-hover:scale-115 transition-transform duration-300 border-4 border-white/30">
-                  <Play className="w-7 h-7 sm:w-8 sm:h-8 fill-selestia-black translate-x-0.5" />
-                </div>
-                <div className="text-white text-xs sm:text-sm font-extrabold uppercase tracking-widest font-display drop-shadow-md">
-                  PLAY DIGITAL STUDIO REEL
-                </div>
-              </div>
-
-              {/* Bottom Subtle Overlay Description */}
-              <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-[11px] text-gray-300 font-mono">
-                <span className="hidden sm:inline">BESPOKE WEB ENGINEERING &amp; EDITORIAL BRANDING</span>
-                <span className="text-selestia-gold font-bold uppercase tracking-wider hover:underline ml-auto flex items-center">
-                  CLICK TO WATCH FULL SCREEN <ArrowUpRight className="w-3.5 h-3.5 ml-1" />
-                </span>
-              </div>
             </div>
           </motion.div>
 
