@@ -96,3 +96,45 @@
 .font-luxury {
   font-family: 'Playfair Display', serif;
 }
+
+/* Background Lighting & Shimmer Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes floatLight {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-25px) translateX(15px);
+  }
+}
+
+@keyframes slowBeamRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+.animate-float-light {
+  animation: floatLight 8s ease-in-out infinite;
+}
+
+.animate-beam-rotate {
+  animation: slowBeamRotate 45s linear infinite;
+}
