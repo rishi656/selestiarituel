@@ -1,8 +1,14 @@
 import React from 'react';
+import { ThreeDLineBackground } from './ThreeDLineBackground';
 
 export const GridLinesBackground: React.FC = () => {
   return (
     <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+      {/* 0. Dynamic Interactive 3D Gold Wave Line Canvas */}
+      <div className="absolute inset-0 opacity-80 pointer-events-none z-0">
+        <ThreeDLineBackground />
+      </div>
+
       {/* 1. Architectural Precision Grid Lines with Gold Center Mask */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_75%_65%_at_50%_0%,#000_80%,transparent_100%)]" />
 
