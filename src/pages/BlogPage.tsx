@@ -7,7 +7,7 @@ export const BlogPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
-  const categories = ['All', 'Web Design', 'E-Commerce', 'Digital Marketing', 'Production', 'Social Media', 'Branding'];
+  const categories = ['All', 'SEO & GEO', 'Appointment Generation', 'Web Design', 'E-Commerce', 'Production', 'Social Media', 'Branding'];
 
   const filteredPosts = BLOG_POSTS.filter(post => {
     const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;

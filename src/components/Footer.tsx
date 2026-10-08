@@ -7,9 +7,25 @@ export const Footer: React.FC = () => {
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (newsletterEmail.trim()) {
+      try {
+        await fetch('https://formsubmit.co/ajax/info.selestiarituel@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            Subscriber_Email: newsletterEmail,
+            _subject: `📬 New Newsletter Subscription: ${newsletterEmail}`,
+            _template: 'table'
+          })
+        });
+      } catch (err) {
+        console.error('Newsletter submission error:', err);
+      }
       setSubscribed(true);
       setNewsletterEmail('');
       setTimeout(() => setSubscribed(false), 5000);
@@ -37,7 +53,7 @@ export const Footer: React.FC = () => {
             {/* Social Channels */}
             <div className="flex items-center space-x-3 pt-2">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/selestiarituel?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 bg-white/5 hover:bg-selestia-gold hover:text-selestia-black rounded-full flex items-center justify-center text-gray-400 transition-all duration-300 border border-white/10"
@@ -132,7 +148,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/services/digital-marketing" className="text-gray-300 hover:text-selestia-gold transition-colors">
-                  Digital Marketing
+                  Appointment Generation
                 </Link>
               </li>
               <li>
@@ -155,17 +171,17 @@ export const Footer: React.FC = () => {
                 Studio Contacts
               </h4>
               <div className="space-y-2.5 text-xs text-gray-300">
-                <a href="mailto:hello@selestiarituel.com" className="flex items-center space-x-2 hover:text-selestia-gold transition-colors">
+                <a href="mailto:info.selestiarituel@gmail.com" className="flex items-center space-x-2 hover:text-selestia-gold transition-colors">
                   <Mail className="w-4 h-4 text-selestia-gold flex-shrink-0" />
-                  <span>hello@selestiarituel.com</span>
+                  <span>info.selestiarituel@gmail.com</span>
                 </a>
-                <a href="tel:+18009876543" className="flex items-center space-x-2 hover:text-selestia-gold transition-colors">
+                <a href="tel:+918866468856" className="flex items-center space-x-2 hover:text-selestia-gold transition-colors">
                   <Phone className="w-4 h-4 text-selestia-gold flex-shrink-0" />
-                  <span>+1 (800) 987-6543</span>
+                  <span>+91 8866468856</span>
                 </a>
                 <div className="flex items-start space-x-2">
                   <MapPin className="w-4 h-4 text-selestia-gold flex-shrink-0 mt-0.5" />
-                  <span>Studio 404, Creative District, New York &amp; Dubai</span>
+                  <span>Ahmedabad, Gujarat, India (Global Hubs: USA • UAE)</span>
                 </div>
               </div>
             </div>

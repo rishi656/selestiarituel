@@ -16,13 +16,34 @@ export const ContactPage: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+    try {
+      await fetch('https://formsubmit.co/ajax/info.selestiarituel@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          Name: formData.name,
+          Company: formData.company || 'Not Specified',
+          Email: formData.email,
+          Phone: formData.phone || 'Not Provided',
+          Service_Requested: formData.service,
+          Estimated_Budget: formData.budget,
+          Project_Message: formData.message || 'No additional details provided.',
+          _subject: `📩 New Website Inquiry: ${formData.name} (${formData.service})`,
+          _template: 'table'
+        })
+      });
+    } catch (err) {
+      console.error('Email submission error:', err);
+    } finally {
       setLoading(false);
       setSubmitted(true);
-    }, 1200);
+    }
   };
 
   return (
@@ -126,7 +147,7 @@ export const ContactPage: React.FC = () => {
                     >
                       <option value="Web Design & Development">Web Design & Development</option>
                       <option value="E-Commerce">E-Commerce</option>
-                      <option value="Digital Marketing">Digital Marketing</option>
+                      <option value="Appointment Generation">Appointment Generation</option>
                       <option value="Social Media Marketing">Social Media Marketing</option>
                       <option value="Production">Production</option>
                       <option value="Other">Other / Full Retainer</option>
@@ -203,33 +224,33 @@ export const ContactPage: React.FC = () => {
               <h3 className="text-xl font-bold font-display text-selestia-black">STUDIO CONTACTS</h3>
 
               <div className="space-y-4 text-sm text-gray-700">
-                <a href="mailto:hello@selestiarituel.com" className="flex items-center space-x-3 hover:text-selestia-gold transition-colors">
+                <a href="mailto:info.selestiarituel@gmail.com" className="flex items-center space-x-3 hover:text-selestia-gold transition-colors">
                   <div className="p-3 bg-white rounded-xl border border-selestia-gray-border text-selestia-gold">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="text-xs text-gray-400 font-semibold uppercase">Email</div>
-                    <div className="font-bold text-selestia-black">hello@selestiarituel.com</div>
+                    <div className="font-bold text-selestia-black">info.selestiarituel@gmail.com</div>
                   </div>
                 </a>
 
-                <a href="tel:+18009876543" className="flex items-center space-x-3 hover:text-selestia-gold transition-colors">
+                <a href="tel:+918866468856" className="flex items-center space-x-3 hover:text-selestia-gold transition-colors">
                   <div className="p-3 bg-white rounded-xl border border-selestia-gray-border text-selestia-gold">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="text-xs text-gray-400 font-semibold uppercase">Phone / Hotline</div>
-                    <div className="font-bold text-selestia-black">+1 (800) 987-6543</div>
+                    <div className="font-bold text-selestia-black">+91 8866468856</div>
                   </div>
                 </a>
 
-                <a href="https://wa.me/18009876543" target="_blank" rel="noreferrer" className="flex items-center space-x-3 hover:text-selestia-gold transition-colors">
+                <a href="https://wa.me/918866468856" target="_blank" rel="noreferrer" className="flex items-center space-x-3 hover:text-selestia-gold transition-colors">
                   <div className="p-3 bg-white rounded-xl border border-selestia-gray-border text-green-500">
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="text-xs text-gray-400 font-semibold uppercase">WhatsApp VIP Concierge</div>
-                    <div className="font-bold text-selestia-black">+1 (800) 987-6543</div>
+                    <div className="font-bold text-selestia-black">+91 8866468856</div>
                   </div>
                 </a>
               </div>
@@ -240,15 +261,15 @@ export const ContactPage: React.FC = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="w-6 h-6 text-selestia-gold" />
                 <div>
-                  <h4 className="text-base font-bold font-display text-white">GLOBAL HQ &amp; STUDIOS</h4>
-                  <p className="text-xs text-gray-400">New York &amp; Dubai Design Hubs</p>
+                  <h4 className="text-base font-bold font-display text-white">HEADQUARTERS &amp; STUDIO</h4>
+                  <p className="text-xs text-gray-400">Ahmedabad, Gujarat, India</p>
                 </div>
               </div>
 
               <div className="p-4 bg-white/5 rounded-2xl border border-white/10 text-xs text-gray-300 space-y-1">
-                <div className="font-bold text-white">Studio 404, Creative District</div>
-                <div>Avenue of the Americas, Manhattan, NYC</div>
-                <div className="text-selestia-gold pt-1">Open Monday – Friday: 9:00 AM – 7:00 PM EST</div>
+                <div className="font-bold text-white">Selestia Rituel Creative &amp; Digital Studio</div>
+                <div>Ahmedabad, Gujarat, India</div>
+                <div className="text-selestia-gold pt-1">Open Monday – Saturday: 9:00 AM – 7:00 PM IST</div>
               </div>
             </div>
           </div>

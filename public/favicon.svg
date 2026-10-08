@@ -1,8 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <rect width="100" height="100" rx="20" fill="#080808"/>
-  <path d="M15 70 C 35 25, 65 25, 85 70" stroke="#F9BD2A" stroke-width="4" stroke-linecap="round" fill="none"/>
-  <!-- Gold 4-point sparkle star -->
-  <path d="M 68 25 Q 68 33 76 33 Q 68 33 68 41 Q 68 33 60 33 Q 68 33 68 25 Z" fill="#F9BD2A"/>
-  <!-- Stylized 'S' / 'SR' emblem -->
-  <text x="50%" y="68%" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="28" fill="#FFFFFF" letter-spacing="1">SR</text>
+  <rect width="100" height="100" rx="24" fill="#080808"/>
+  <path d="M 18 68 C 32 30, 68 30, 82 68" stroke="#F9BD2A" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <path d="M 72 20 Q 72 34 86 34 Q 72 34 72 48 Q 72 34 58 34 Q 72 34 72 20 Z" fill="#F9BD2A"/>
+  <polygon points="48,42 51.5,50 48,58 44.5,50" fill="#F9BD2A"/>
 </svg>

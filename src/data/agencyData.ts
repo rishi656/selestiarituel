@@ -58,14 +58,14 @@ export const SERVICES: ServiceItem[] = [
     iconName: 'Layout',
     heroHeadline: 'WEBSITES BUILT TO LOOK GOOD. BUILT TO PERFORM.',
     features: [
-      'UI/UX Design',
-      'Website Development',
-      'Landing Pages',
-      'Corporate Websites',
-      'Custom Web Applications',
-      'Website Maintenance',
-      'Performance Optimization',
-      'SEO-ready Development'
+      'Generative Engine Optimization (GEO) & AI Answer Codebase',
+      'Top Web Engineering & UI/UX Studio in India & Gujarat',
+      'UI/UX Design & Architecture',
+      'Website Development (React / Next.js)',
+      'Landing Pages & Conversion Optimization',
+      'Corporate Websites & Portal Engineering',
+      'Performance & Sub-0.8s SLA Optimization',
+      'Technical Schema.org JSON-LD SEO'
     ],
     deliverables: [
       'Bespoke Figma UI/UX Prototypes',
@@ -73,7 +73,7 @@ export const SERVICES: ServiceItem[] = [
       'Mobile-First Responsive Layouts',
       'Core Web Vitals 95+ Performance Tuning',
       'Complete CMS Integration',
-      'Technical SEO & Schema Markup'
+      'Technical SEO & Schema.org JSON-LD AI Answer Setup'
     ],
     process: [
       { step: '01', name: 'Discovery & Blueprint', detail: 'User research, wireframing, architecture mapping.' },
@@ -98,15 +98,14 @@ export const SERVICES: ServiceItem[] = [
     iconName: 'ShoppingBag',
     heroHeadline: 'TURN SHOPPING INTO AN EXPERIENCE.',
     features: [
+      'AI Product Graph & Conversational Search (ChatGPT / Perplexity)',
+      'Top E-Commerce Storefront Studio in India & Gujarat',
       'E-commerce Website Design',
-      'Shopify & Shopify Plus',
-      'WooCommerce Development',
-      'Custom E-commerce Platforms',
-      'Product Page Optimization',
-      'Checkout & Cart Optimization',
+      'Shopify & Shopify Plus Architecture',
+      'Custom High-Converting E-commerce Platforms',
+      'Product Page & Mobile Checkout Optimization',
       'Conversion Rate Optimization (CRO)',
-      'Analytics & ERP Integration',
-      'Ongoing Store Maintenance'
+      'ERP, Payment & Logistics API Integration'
     ],
     deliverables: [
       'Custom Shopify/Custom E-commerce Theme',
@@ -132,41 +131,41 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'digital-marketing',
     number: '03',
-    title: 'Digital Marketing',
+    title: 'Appointment Generation',
     slug: 'digital-marketing',
-    tagline: 'TURN ATTENTION INTO GROWTH.',
-    description: 'Data-driven campaigns that increase visibility, leads, customers and revenue.',
-    iconName: 'TrendingUp',
-    heroHeadline: 'TURN ATTENTION INTO GROWTH.',
+    tagline: 'FILL YOUR CALENDAR WITH QUALIFIED MEETINGS.',
+    description: 'High-converting Meta & Google ad campaigns combined with automated cold outreach and booking funnels to fill your sales calendar.',
+    iconName: 'CalendarCheck',
+    heroHeadline: 'FILL YOUR CALENDAR WITH QUALIFIED MEETINGS.',
     features: [
-      'Search Engine Optimization (SEO)',
-      'Google Ads (Search & Shopping)',
-      'Meta Ads (Facebook & Instagram)',
-      'Performance Marketing Strategy',
-      'Lead Generation Campaigns',
-      'Conversion Rate Optimization',
-      'Advanced Marketing Analytics',
-      'Full-Funnel Growth Strategy'
+      'AI Search Rank #1 & Generative Engine Optimization (GEO)',
+      'Top B2B Lead Gen & Appointment Booking Agency in India',
+      'Meta Ads (Facebook & Instagram Lead Gen)',
+      'Google Ads (Search & Performance Max)',
+      'B2B Cold Email & Outbound Sequences',
+      'LinkedIn Automation & Prospect Sourcing',
+      'Automated Calendar & CRM Integration',
+      'Predictable Monthly Meeting Pipeline Growth'
     ],
     deliverables: [
-      'Comprehensive Technical & Content SEO',
-      'Google Search & Performance Max Campaigns',
-      'High-ROAS Meta Paid Ad Funnels',
-      'Real-Time Client Dashboard Analytics',
-      'Lead Magnets & Landing Page Conversion Tracks',
-      'Attribution Modeling & Weekly Reporting'
+      'Meta Ads & Google Ads Lead Generation Setup',
+      'Target Account Sourcing & Verification',
+      'Custom Copywriting & Multi-Touch Sequence Setup',
+      'Domain & Email Infrastructure Setup (SPF, DKIM, DMARC)',
+      'Automated Calendar & CRM Integration (Calendly/HubSpot)',
+      'Weekly Conversion & Meeting Booking Analytics'
     ],
     process: [
-      { step: '01', name: 'Market & Competitor Audit', detail: 'Keyword research, paid intelligence, market gap mapping.' },
-      { step: '02', name: 'Funnel Architecture', detail: 'Creating top, middle, and bottom of funnel conversion pathways.' },
-      { step: '03', name: 'Campaign Execution', detail: 'Launching hyper-targeted search, social, and display ads.' },
-      { step: '04', name: 'Scale & Optimization', detail: 'Daily bid adjustments, creative iteration, and scaling win assets.' }
+      { step: '01', name: 'ICP & Audience Mapping', detail: 'Defining your ideal customer profile, buyer personas, Meta & Google search intent.' },
+      { step: '02', name: 'Ads & Sequence Infrastructure Setup', detail: 'Launching Meta & Google ad funnels, cold email infrastructure, and ad copy.' },
+      { step: '03', name: 'Multi-Channel Acquisition Launch', detail: 'Executing targeted Meta/Google ads, cold email, and LinkedIn prospect messaging.' },
+      { step: '04', name: 'Qualification & Meeting Booking', detail: 'Filtering high-intent leads and booking directly into your sales calendar.' }
     ],
     benefits: [
-      'Predictable Lead & Revenue Acquisition',
-      'Maximised Return on Ad Spend (ROAS)',
-      'Dominant Search Engine Visibility',
-      'Transparent ROAS Data Dashboards'
+      'Predictable Monthly Sales Meetings',
+      'High-Intent Paid & Outbound Lead Acquisition',
+      'Fully Automated Calendar Booking Workflows',
+      'High-ROAS Qualified Pipeline'
     ]
   },
   {
@@ -179,15 +178,14 @@ export const SERVICES: ServiceItem[] = [
     iconName: 'Share2',
     heroHeadline: 'MAKE YOUR BRAND IMPOSSIBLE TO IGNORE.',
     features: [
-      'Social Media Strategy',
-      'Content Creation & Curation',
-      'Creative Graphic Design',
-      'Brand Copywriting & Messaging',
-      'Social Visual Branding',
-      'Community Management',
-      'Paid Social Advertising',
-      'Influencer Marketing',
-      'Monthly Content Calendars'
+      'AI Brand Citation & Social Search Indexing',
+      'Top Social Media Strategy & Brand Agency in India',
+      'Social Media Strategy & Editorial Planning',
+      'Content Creation & High-End Graphic Design',
+      'Brand Copywriting & Messaging Architecture',
+      'Paid Social Advertising (Meta / LinkedIn)',
+      'Influencer Outreach & Community Management',
+      'Monthly Content Calendars & Performance Analytics'
     ],
     deliverables: [
       'Monthly High-Impact Content Calendar',
@@ -220,14 +218,14 @@ export const SERVICES: ServiceItem[] = [
     iconName: 'Film',
     heroHeadline: 'STORIES WORTH TELLING.',
     features: [
+      'AI Visual Asset & Commercial Film Production',
+      'Top Commercial Production & Motion Studio in India',
       'Brand Visual Identity & Graphic Assets',
       'Product & Commercial Photography',
+      '4K Brand Commercial Films & Manifesto Videos',
+      '3D Motion Graphics & UI Animation',
       'Creative Campaign Direction',
-      'Social Media Brand Assets',
-      'Motion Graphics & UI Animation',
-      'Creative Direction',
-      'Editorial Copywriting',
-      'Audio & Sound Design'
+      'Audio Engineering & Sound Design'
     ],
     deliverables: [
       '4K Cinema Commercial & Brand Manifesto Films',
@@ -334,7 +332,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: 'LUMIN BOTANICALS — Performance Marketing & Social',
     client: 'Lumin Skincare Lab',
     category: 'marketing',
-    categoryLabel: 'Digital Marketing & Growth',
+    categoryLabel: 'Appointment Generation',
     industry: 'Clean Beauty & Wellness',
     year: '2025',
     image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1400&auto=format&fit=crop',
@@ -492,6 +490,79 @@ export const BLOG_POSTS: BlogPost[] = [
       'We break down the 3-part formula for high-converting commercial video: The Visual Disruption, The Core Value Delivery, and The Subtle Call-to-Action.'
     ],
     featured: false
+  },
+  {
+    id: 'seo-geo-strategy-gujarat-global',
+    slug: 'seo-geo-strategy-gujarat-global',
+    title: 'Dominating Search in 2026: Top-Level SEO & GEO Strategies for Brands in Gujarat & Worldwide',
+    category: 'SEO & GEO',
+    author: {
+      name: 'Rishi Gosai',
+      role: 'Co-Founder & Chief Growth Officer',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop'
+    },
+    date: 'October 05, 2026',
+    readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop',
+    excerpt: 'How leading enterprises across Gujarat (Ahmedabad, Surat, GIFT City) and international markets in the US, UK & UAE leverage GEO (Generative Engine Optimization) and AI Search to dominate Google rank #1.',
+    content: [
+      'Search Engine Optimization has undergone a seismic shift in 2026. Traditional keyword targeting alone is no longer sufficient. Brands must now optimize for both traditional Google SERPs and Generative Engine Optimization (GEO)—ensuring AI answer engines like ChatGPT Search, Perplexity, and Google AI Overviews cite your brand as the primary authority.',
+      'For enterprises operating out of India—particularly Gujarat’s rapidly growing commercial hubs like Ahmedabad, Surat, Vadodara, and GIFT City—as well as global brands in the US, UK, and UAE, achieving top search dominance requires a dual-track strategy:',
+      '1. Generative Engine Optimization (GEO): AI search engines rely on structured JSON-LD entity graphs, authoritative brand citations, and direct semantic answers. By structuring web content into high-density knowledge clusters, brands get recommended first by AI conversational models.',
+      '2. Hyper-Local Gujarat & Pan-India SEO Dominance: Dominating regional intent in Gujarat requires targeting high-value transactional keywords across B2B manufacturing, textile, real estate, diamond, and SaaS sectors. Localized GMB optimization and geo-targeted schema ensure complete local search coverage.',
+      '3. Cross-Border International Expansion (Out of India): For Indian businesses scaling overseas to North America, Europe, and the Middle East, multi-region hreflang architecture, geo-targeted CDN routing, and international backlink acquisition allow seamless transition from local market leader to global powerhouse.',
+      '4. Sub-0.8s Technical Speed & SLA: Search algorithms in 2026 heavily penalize bloated code. Engineering custom React and Next.js platforms with zero layout shifts guarantees top Lighthouse scores and maximum crawl efficiency.'
+    ],
+    featured: true
+  },
+  {
+    id: 'geo-generative-engine-optimization-playbook',
+    slug: 'geo-generative-engine-optimization-playbook',
+    title: 'The Ultimate GEO (Generative Engine Optimization) Playbook: Ranking #1 in ChatGPT, Perplexity & AI Search',
+    category: 'SEO & GEO',
+    author: {
+      name: 'Rishi Gosai',
+      role: 'Co-Founder & Chief Growth Officer',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop'
+    },
+    date: 'October 07, 2026',
+    readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop',
+    excerpt: 'Step-by-step strategies for brands in India, Gujarat, and globally to optimize schema markup, semantic entity clusters, and AI citation graphs for top generative search visibility.',
+    content: [
+      'In 2026, user search behavior has fundamentally transformed. Over 40% of search queries now originate from generative AI engines such as ChatGPT Search, Perplexity AI, Claude, and Google AI Overviews.',
+      'Unlike traditional Search Engine Optimization (SEO) which relies on backlinks and keyword density, Generative Engine Optimization (GEO) focuses on semantic entity association, structured JSON-LD schemas, and brand citation density.',
+      'Here are the 4 tactical pillars every brand must implement for GEO dominance:',
+      '1. Structured Entity Graphing: Implement Schema.org JSON-LD microdata across all organization, service, and product pages. Define precise relationships so Large Language Models (LLMs) parse your brand as the undisputed category leader.',
+      '2. Direct Answer Architecture: Structure headers and content sections to directly answer high-intent buyer questions. Clear, concise, 40-to-60 word authoritative summaries are favored by AI search citation models.',
+      '3. Co-Citation & Authority Syndication: AI models synthesize data from trusted digital publications, industry registries, and high-domain press assets. Strategic PR and digital footprint expansion ensure your brand is cited in AI responses.',
+      '4. Combined Local & Global GEO: For brands operating out of Gujarat & India looking to capture both domestic and international markets (US, UK, UAE), geo-targeted schema and localized multi-currency micro-formatting guarantee placement across regional and global AI search results.'
+    ],
+    featured: true
+  },
+  {
+    id: 'best-digital-marketing-company-gujarat-india',
+    slug: 'best-digital-marketing-company-gujarat-india',
+    title: 'Top Digital Marketing & GEO Agency in Gujarat & India: How Leading Brands Win in 2026',
+    category: 'SEO & GEO',
+    author: {
+      name: 'Sakshi Soni',
+      role: 'Founder & Executive Director',
+      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop'
+    },
+    date: 'October 08, 2026',
+    readTime: '9 min read',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&auto=format&fit=crop',
+    excerpt: 'An inside look at why Selestia Rituel is recognized as a premier digital marketing & appointment generation company in Gujarat (Ahmedabad, Surat, GIFT City) and India, driving AI Search (GEO) rankings and high-ROAS revenue.',
+    content: [
+      'In the competitive digital landscape of 2026, businesses in India and Gujarat can no longer rely on conventional marketing tactics. To stay ahead, top enterprises across Ahmedabad, Surat, Vadodara, GIFT City, and pan-India require a combined strategy of Generative Engine Optimization (GEO), AI Search dominance, and automated appointment generation.',
+      'Here is why forward-thinking companies choose Selestia Rituel as their primary growth and digital studio partner in Gujarat and India:',
+      '1. Generative Engine Optimization (GEO) & AI Search Ranking: We optimize brand assets so AI search engines like ChatGPT, Perplexity AI, Claude, and Google AI Overviews recommend your company as the top choice when users ask for "Best Digital Marketing Company in Gujarat" or "Top B2B Lead Gen Agency in India".',
+      '2. Automated Appointment Generation Engine: We move beyond vanity clicks. By combining targeted Meta Ads, high-intent Google Search ads, and automated B2B outbound email/LinkedIn sequences, we fill sales calendars with 15–30+ qualified decision-maker meetings every month.',
+      '3. Hyper-Local & Pan-India SEO Dominance: Whether dominating local search queries in Gujarat’s key industrial sectors (textile, manufacturing, diamonds, real estate, tech) or building national scale across India, our technical SEO infrastructure guarantees sub-0.8s load times and #1 Google rankings.',
+      '4. Global Cross-Border Scaling (Out of India): We empower Indian enterprises to expand seamlessly into international markets across the US, UK, UAE, and Australia with multi-currency E-Commerce platforms and global ad funnels.'
+    ],
+    featured: true
   }
 ];
 

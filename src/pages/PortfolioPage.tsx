@@ -42,7 +42,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onOpenContactModal
             { key: 'all', label: 'All Projects' },
             { key: 'web', label: 'Web Design & Dev' },
             { key: 'ecommerce', label: 'E-Commerce' },
-            { key: 'marketing', label: 'Digital Marketing' },
+            { key: 'marketing', label: 'Appointment Generation' },
             { key: 'social', label: 'Social Media' },
             { key: 'production', label: 'Production' },
           ].map((tab) => (

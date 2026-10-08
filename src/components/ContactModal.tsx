@@ -27,13 +27,34 @@ export const ContactModal: React.FC<ContactModalProps> = ({
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      await fetch('https://formsubmit.co/ajax/info.selestiarituel@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          Name: formData.name,
+          Company: formData.company || 'Not Specified',
+          Email: formData.email,
+          Phone: formData.phone || 'Not Provided',
+          Service_Requested: formData.service,
+          Estimated_Budget: formData.budget,
+          Project_Details: formData.message || 'No additional details provided.',
+          _subject: `🔥 New Project Inquiry: ${formData.name} (${formData.service})`,
+          _template: 'table'
+        })
+      });
+    } catch (err) {
+      console.error('Email submission error:', err);
+    } finally {
       setIsSubmitting(false);
       setSubmitted(true);
-    }, 1200);
+    }
   };
 
   const handleReset = () => {
@@ -158,7 +179,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                       >
                         <option value="Web Design & Development">Web Design & Development</option>
                         <option value="E-Commerce">E-Commerce</option>
-                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Appointment Generation">Appointment Generation</option>
                         <option value="Social Media Marketing">Social Media Marketing</option>
                         <option value="Production">Production</option>
                         <option value="Full Studio Retainer">Full Studio Retainer</option>

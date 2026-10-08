@@ -14,7 +14,7 @@ export const ProjectEstimator: React.FC<ProjectEstimatorProps> = ({ onOpenContac
   const services = [
     { name: 'Web Design & Development', desc: 'Bespoke React/TypeScript website with 95+ speed score' },
     { name: 'E-Commerce Storefront', desc: 'Scalable Shopify Plus or custom digital storefront' },
-    { name: 'Digital Marketing & Ads', desc: 'Full-funnel SEO, Google PMax & Meta ad campaigns' },
+    { name: 'Appointment Generation', desc: 'B2B cold outreach, email sequences & calendar booking' },
     { name: 'Social Media Marketing', desc: 'Brand copywriting, audience growth & paid social' },
     { name: 'Creative Brand Studio', desc: 'Graphic identity, campaign copy & luxury brand assets' },
   ];

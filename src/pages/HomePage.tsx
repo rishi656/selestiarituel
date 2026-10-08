@@ -26,7 +26,6 @@ import {
 import { SERVICES, CASE_STUDIES, TESTIMONIALS, BLOG_POSTS, TEAM_MEMBERS } from '../data/agencyData';
 import { SelestiaLogo } from '../components/SelestiaLogo';
 import { AnimatedCounter } from '../components/AnimatedCounter';
-import { ClientMarquee } from '../components/ClientMarquee';
 import { ShowreelModal } from '../components/ShowreelModal';
 import { ProjectEstimator } from '../components/ProjectEstimator';
 import { GridLinesBackground } from '../components/GridLinesBackground';
@@ -234,11 +233,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenContactModal }) => {
 
         </div>
       </section>
-
-      {/* ================================================== */}
-      {/* INFINITE CLIENT LOGO MARQUEE TICKER               */}
-      {/* ================================================== */}
-      <ClientMarquee />
 
       {/* ================================================== */}
       {/* SECTION 2 — TRUST / INTRODUCTION                  */}

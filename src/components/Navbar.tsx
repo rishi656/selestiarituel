@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContactModal }) => {
   const serviceDropdownItems = [
     { title: 'Web Design & Development', path: '/services/web-design-development', desc: 'Bespoke UI/UX & high-performance code' },
     { title: 'E-Commerce', path: '/services/ecommerce', desc: 'Scalable Shopify & custom digital storefronts' },
-    { title: 'Digital Marketing', path: '/services/digital-marketing', desc: 'SEO, Google & Meta ads full-funnel growth' },
+    { title: 'Appointment Generation', path: '/services/digital-marketing', desc: 'B2B outreach, cold email, LinkedIn & booked meetings' },
     { title: 'Social Media Marketing', path: '/services/social-media-marketing', desc: 'Content strategy, brand graphics & paid social' },
     { title: 'Production', path: '/services/production', desc: 'Commercial photography & visual brand identity' },
   ];

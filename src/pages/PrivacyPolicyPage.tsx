@@ -30,7 +30,7 @@ export const PrivacyPolicyPage: React.FC = () => {
           <p>Your data is strictly utilized to:</p>
           <ul className="list-disc pl-5 space-y-1">
             <li>Respond to project inquiries and provide tailored proposals.</li>
-            <li>Deliver digital marketing, web engineering, and commercial production services.</li>
+            <li>Deliver appointment generation, web engineering, and commercial production services.</li>
             <li>Send requested email newsletters, industry insights, and studio updates.</li>
             <li>Optimize website performance, user interface experience, and security.</li>
           </ul>

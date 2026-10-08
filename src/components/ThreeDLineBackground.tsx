@@ -20,7 +20,7 @@ export const ThreeDLineBackground: React.FC<ThreeDLineBackgroundProps> = ({ clas
       0.1,
       1000
     );
-    camera.position.set(0, 8, 16);
+    camera.position.set(0, 0, 16);
     camera.lookAt(0, 0, 0);
 
     // 2. Renderer Setup
@@ -36,7 +36,7 @@ export const ThreeDLineBackground: React.FC<ThreeDLineBackgroundProps> = ({ clas
     const segmentsY = 24;
 
     const planeGeo = new THREE.PlaneGeometry(width, height, segmentsX, segmentsY);
-    planeGeo.rotateX(-Math.PI / 2.5); // Tilt to give 3D horizon perspective
+    planeGeo.rotateX(-Math.PI / 6); // Centered 3D horizon perspective
 
     // Wireframe material with Selestia Gold color
     const wireframeMat = new THREE.MeshBasicMaterial({
@@ -119,7 +119,7 @@ export const ThreeDLineBackground: React.FC<ThreeDLineBackgroundProps> = ({ clas
 
       // Camera tilt based on mouse position
       camera.position.x = targetX * 3;
-      camera.position.y = 8 + targetY * 1.5;
+      camera.position.y = targetY * 1.5;
       camera.lookAt(0, 0, 0);
 
       // Animate 3D plane vertices (Dynamic 3D Wave elevation)

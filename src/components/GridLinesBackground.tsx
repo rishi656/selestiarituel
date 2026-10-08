@@ -10,7 +10,7 @@ export const GridLinesBackground: React.FC = () => {
       </div>
 
       {/* 1. Architectural Precision Grid Lines with Gold Center Mask */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_75%_65%_at_50%_0%,#000_80%,transparent_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_75%_65%_at_50%_50%,#000_80%,transparent_100%)]" />
 
       {/* 2. Primary Top-Center Animated Gold Spotlight */}
       <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-gradient-to-b from-selestia-gold/30 via-selestia-gold/10 to-transparent rounded-full blur-[140px] pointer-events-none animate-pulse-glow" />

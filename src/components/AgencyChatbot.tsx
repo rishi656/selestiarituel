@@ -106,15 +106,15 @@ export const AgencyChatbot: React.FC<AgencyChatbotProps> = ({ onOpenContactModal
     let actionLink: { label: string; service?: string } | undefined = undefined;
 
     if (actionKey === 'services' || q.includes('service') || q.includes('what do you do') || q.includes('offer')) {
-      botReplyText = "We specialize in **5 core digital studio disciplines**:\n\n• **Web Design & Development**: Bespoke React/TypeScript sites with sub-0.8s SLA.\n• **E-Commerce**: Scalable Shopify & custom high-converting storefronts.\n• **Digital Marketing & Ads**: Google PMax & Meta ad scaling (+340% ROAS).\n• **SEO Rank Dominance**: #1 Google placements & organic growth.\n• **Social Media Growth**: Brand strategy & copywriting.";
+      botReplyText = "We specialize in **5 core digital studio disciplines**:\n\n• **Web Design & Development**: Bespoke React/TypeScript sites with sub-0.8s SLA.\n• **E-Commerce**: Scalable Shopify & custom high-converting storefronts.\n• **Appointment Generation**: Automated cold email, LinkedIn outreach & calendar booking.\n• **Social Media Growth**: Brand strategy & copywriting.\n• **Commercial Production**: High-end photography & brand film.";
       options = [
         { label: '💻 Web Design Details', action: 'web' },
-        { label: '📊 Paid Ads ROAS', action: 'marketing' },
+        { label: '📅 Appointment Booking System', action: 'marketing' },
         { label: '🚀 Start a Project', action: 'contact' }
       ];
-    } else if (actionKey === 'marketing' || q.includes('ads') || q.includes('marketing') || q.includes('roas') || q.includes('seo') || q.includes('google')) {
-      botReplyText = "Our **Digital Marketing Acquisition Engine** is built for aggressive revenue growth:\n\n⚡ **+340% Average ROAS** on Meta & Google Ads\n🎯 **1,450+ High-Intent Keywords** captured for #1 Google rank\n📈 **Full-Funnel Tracking**: Real-time CRO and lead optimization.\n\nWould you like a custom marketing strategy audit for your brand?";
-      actionLink = { label: 'Inquire About Digital Marketing', service: 'Digital Marketing & Paid Ads' };
+    } else if (actionKey === 'marketing' || q.includes('ads') || q.includes('marketing') || q.includes('appointment') || q.includes('leads') || q.includes('outreach')) {
+      botReplyText = "Our **Appointment Generation Engine** fills your calendar with high-intent meetings:\n\n⚡ **15-30+ Qualified Meetings/mo** via outbound channels\n🎯 **Hyper-Targeted B2B Prospecting**: ICP lead list verification\n📈 **Automated Outreach**: Multi-touch email & LinkedIn flows with CRM sync.\n\nWould you like a custom appointment generation campaign for your business?";
+      actionLink = { label: 'Inquire About Appointment Generation', service: 'Appointment Generation' };
       options = [
         { label: '💰 View Pricing', action: 'pricing' },
         { label: '📅 Book Strategy Meeting', action: 'contact' }
@@ -127,7 +127,7 @@ export const AgencyChatbot: React.FC<AgencyChatbotProps> = ({ onOpenContactModal
         { label: '💬 Talk to Agency Team', action: 'contact' }
       ];
     } else if (actionKey === 'pricing' || q.includes('price') || q.includes('cost') || q.includes('budget') || q.includes('fee') || q.includes('estimate')) {
-      botReplyText = "Our project engagements typically range based on scope:\n\n• **Standard Web / Strategy Project**: $5,000 – $15,000\n• **Full Scale E-Commerce & Web**: $15,000 – $35,000\n• **Monthly Digital Marketing Retainer**: $3,500 – $10,000/mo\n\nYou can use our interactive Scope Calculator or book a call for a custom proposal.";
+      botReplyText = "Our project engagements typically range based on scope:\n\n• **Standard Web / Strategy Project**: $5,000 – $15,000\n• **Full Scale E-Commerce & Web**: $15,000 – $35,000\n• **Monthly Appointment Generation Retainer**: $3,500 – $10,000/mo\n\nYou can use our interactive Scope Calculator or book a call for a custom proposal.";
       actionLink = { label: 'Get Custom Estimate', service: 'Custom Project Estimate' };
       options = [
         { label: '📅 Book Free Consultation', action: 'contact' },

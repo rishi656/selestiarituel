@@ -53,7 +53,7 @@ export const DigitalAgencyVisual: React.FC<DigitalAgencyVisualProps> = ({
             <div className="flex items-center space-x-2.5">
               <span className="w-2.5 h-2.5 rounded-full bg-selestia-gold animate-pulse shadow-sm shadow-selestia-gold" />
               <span className="text-xs font-mono font-bold text-selestia-gold uppercase tracking-widest">
-                DIGITAL MARKETING MATRIX
+                APPOINTMENT GENERATION MATRIX
               </span>
             </div>
 
@@ -329,7 +329,7 @@ export const DigitalAgencyVisual: React.FC<DigitalAgencyVisualProps> = ({
             <button
               onClick={() => {
                 if (onOpenEstimator) onOpenEstimator();
-                else if (onOpenContactModal) onOpenContactModal('Digital Marketing Matrix');
+                else if (onOpenContactModal) onOpenContactModal('Appointment Generation Matrix');
               }}
               className="inline-flex items-center space-x-2 text-xs font-bold text-selestia-gold hover:text-white transition-colors"
             >

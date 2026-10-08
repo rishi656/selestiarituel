@@ -25,7 +25,7 @@ export const TermsConditionsPage: React.FC = () => {
 
           <h2 className="text-xl font-bold text-selestia-black font-display">2. Studio Engagement Terms</h2>
           <p>
-            Client engagements for web design &amp; development, e-commerce, digital marketing, social media management, and commercial video production are governed by individual Master Services Agreements (MSA) and Statements of Work (SOW) executed between Selestia Rituel and the client.
+            Client engagements for web design &amp; development, e-commerce, appointment generation, social media management, and commercial video production are governed by individual Master Services Agreements (MSA) and Statements of Work (SOW) executed between Selestia Rituel and the client.
           </p>
 
           <h2 className="text-xl font-bold text-selestia-black font-display">3. Limitation of Liability</h2>
