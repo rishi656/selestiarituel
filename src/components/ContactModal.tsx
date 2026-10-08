@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2, ArrowRight, Sparkles, Send } from 'lucide-react';
 import { SelestiaLogo } from './SelestiaLogo';
 
+import { submitToFormSubmit } from '../utils/formSubmit';
+
 interface ContactModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -30,31 +32,20 @@ export const ContactModal: React.FC<ContactModalProps> = ({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    try {
-      await fetch('https://formsubmit.co/ajax/info.selestiarituel@gmail.com', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          Name: formData.name,
-          Company: formData.company || 'Not Specified',
-          Email: formData.email,
-          Phone: formData.phone || 'Not Provided',
-          Service_Requested: formData.service,
-          Estimated_Budget: formData.budget,
-          Project_Details: formData.message || 'No additional details provided.',
-          _subject: `🔥 New Project Inquiry: ${formData.name} (${formData.service})`,
-          _template: 'table'
-        })
-      });
-    } catch (err) {
-      console.error('Email submission error:', err);
-    } finally {
-      setIsSubmitting(false);
-      setSubmitted(true);
-    }
+    await submitToFormSubmit(
+      {
+        Name: formData.name,
+        Company: formData.company || 'Not Specified',
+        Email: formData.email,
+        Phone: formData.phone || 'Not Provided',
+        Service_Requested: formData.service,
+        Estimated_Budget: formData.budget,
+        Project_Details: formData.message || 'No additional details provided.'
+      },
+      `🔥 New Project Inquiry: ${formData.name} (${formData.service})`
+    );
+    setIsSubmitting(false);
+    setSubmitted(true);
   };
 
   const handleReset = () => {

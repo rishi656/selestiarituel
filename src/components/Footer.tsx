@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRight, Mail, Phone, MapPin, Instagram, Linkedin, Facebook, Youtube, Send, Check } from 'lucide-react';
 import { SelestiaLogo } from './SelestiaLogo';
 
+import { submitToFormSubmit } from '../utils/formSubmit';
+
 export const Footer: React.FC = () => {
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
@@ -10,22 +12,10 @@ export const Footer: React.FC = () => {
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (newsletterEmail.trim()) {
-      try {
-        await fetch('https://formsubmit.co/ajax/info.selestiarituel@gmail.com', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            Subscriber_Email: newsletterEmail,
-            _subject: `📬 New Newsletter Subscription: ${newsletterEmail}`,
-            _template: 'table'
-          })
-        });
-      } catch (err) {
-        console.error('Newsletter submission error:', err);
-      }
+      await submitToFormSubmit(
+        { Subscriber_Email: newsletterEmail },
+        `📬 New Newsletter Subscription: ${newsletterEmail}`
+      );
       setSubscribed(true);
       setNewsletterEmail('');
       setTimeout(() => setSubscribed(false), 5000);

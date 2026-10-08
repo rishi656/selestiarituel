@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, MessageSquare, CheckCircle2, Sparkles, Clock, Globe } from 'lucide-react';
 import { SelestiaLogo } from '../components/SelestiaLogo';
 
+import { submitToFormSubmit } from '../utils/formSubmit';
+
 export const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -19,31 +21,20 @@ export const ContactPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    try {
-      await fetch('https://formsubmit.co/ajax/info.selestiarituel@gmail.com', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          Name: formData.name,
-          Company: formData.company || 'Not Specified',
-          Email: formData.email,
-          Phone: formData.phone || 'Not Provided',
-          Service_Requested: formData.service,
-          Estimated_Budget: formData.budget,
-          Project_Message: formData.message || 'No additional details provided.',
-          _subject: `📩 New Website Inquiry: ${formData.name} (${formData.service})`,
-          _template: 'table'
-        })
-      });
-    } catch (err) {
-      console.error('Email submission error:', err);
-    } finally {
-      setLoading(false);
-      setSubmitted(true);
-    }
+    await submitToFormSubmit(
+      {
+        Name: formData.name,
+        Company: formData.company || 'Not Specified',
+        Email: formData.email,
+        Phone: formData.phone || 'Not Provided',
+        Service_Requested: formData.service,
+        Estimated_Budget: formData.budget,
+        Project_Message: formData.message || 'No additional details provided.'
+      },
+      `📩 New Website Inquiry: ${formData.name} (${formData.service})`
+    );
+    setLoading(false);
+    setSubmitted(true);
   };
 
   return (
