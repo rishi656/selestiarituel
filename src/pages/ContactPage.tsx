@@ -65,7 +65,17 @@ export const ContactPage: React.FC = () => {
             <div className="absolute top-0 right-0 w-48 h-48 bg-selestia-gold/10 rounded-full blur-3xl pointer-events-none" />
 
             {!submitted ? (
-              <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
+              <form
+                action="https://formsubmit.co/info.selestiarituel@gmail.com"
+                method="POST"
+                onSubmit={handleSubmit}
+                className="space-y-6 relative z-10"
+              >
+                <input type="hidden" name="_subject" value="📩 New Website Inquiry - Selestia Rituel" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value={typeof window !== 'undefined' ? window.location.href : '/'} />
+                
                 <h3 className="text-2xl font-bold font-display text-white">START A PROJECT INQUIRY</h3>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -75,6 +85,7 @@ export const ContactPage: React.FC = () => {
                     </label>
                     <input
                       type="text"
+                      name="Name"
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -89,6 +100,7 @@ export const ContactPage: React.FC = () => {
                     </label>
                     <input
                       type="text"
+                      name="Company"
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                       placeholder="Aethel Luxury House"
@@ -104,6 +116,7 @@ export const ContactPage: React.FC = () => {
                     </label>
                     <input
                       type="email"
+                      name="Email"
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -118,6 +131,7 @@ export const ContactPage: React.FC = () => {
                     </label>
                     <input
                       type="tel"
+                      name="Phone"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="+1 (800) 987-6543"
@@ -132,6 +146,7 @@ export const ContactPage: React.FC = () => {
                       Service Unit
                     </label>
                     <select
+                      name="Service"
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                       className="w-full bg-[#121212] border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-selestia-gold transition-colors"
@@ -150,6 +165,7 @@ export const ContactPage: React.FC = () => {
                       Project Budget Range
                     </label>
                     <select
+                      name="Budget"
                       value={formData.budget}
                       onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                       className="w-full bg-[#121212] border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-selestia-gold transition-colors"
@@ -168,6 +184,7 @@ export const ContactPage: React.FC = () => {
                   </label>
                   <textarea
                     rows={4}
+                    name="Message"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Tell us about your project goals, timelines, competitors, or specific requirements..."
